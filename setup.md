@@ -3,6 +3,6 @@ layout: info_page
 title: Installation instructions
 ---
 
-This page will contain details of any software you need to install prior to the start of the course.
+This page will contain links to installation guides for all workshops.
 
-If you encounter any difficulties with installation please contact...
+
