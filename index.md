@@ -11,6 +11,10 @@ This training programme provides a series workshops to support researchers at th
 These workshops are brought to you by the University of Exeter Research Software Engineering Group, [University of Exeter Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the [University of Exeter Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/). 
 
 
+<ol>
+{% include workshop_listing.html %}
+</ol>
+
 ## When and where
 
 The programme of workshops runs from Oct-July each academic year. Workshops with mulitple sessions will run on consecuative weeks on the same day and time. Most courses will take place in Training Room 4 in the Old Library on Streatham Campus, ([building 7 on this map](https://www.exeter.ac.uk/visit/directions/streathammap/)). All courses will have the option of virtual participation.
