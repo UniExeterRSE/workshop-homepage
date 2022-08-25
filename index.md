@@ -10,10 +10,9 @@ This training programme provides a series workshops to support researchers at th
 
 These workshops are brought to you by the University of Exeter Research Software Engineering Group, [University of Exeter Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the [University of Exeter Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/). 
 
+## Workshops
 
-<ol>
-{% include workshop_listing.html %}
-</ol>
+A list of the workshops we offer can be found on the [Workshops page](https://uniexeterrse.github.io/workshop-homepage/workshops.html).
 
 ## When and where
 
