@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: info_page
 title: Available Workshops
 ---
 
