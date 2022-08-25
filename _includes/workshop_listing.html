@@ -33,7 +33,19 @@
     	<div class="box"></div>
     </div>
     
-    
+    {% for entry in site.data.WorkshopDescriptors %}
+	<div class="main-box">
+	    <div class="box-title">
+		{{ entry.Workshop }}
+	    </div>
+	    <div class="box-content">
+		<p class="box-msg">{{ entry.Overview }}</p>
+		<p class="box-link">Further details can be found on the [course homepage]({{ entry.Workshop }}). </p>
+		<p class="box-date">This course is next scheduled to run: {{ entry.Workshop }}</p>
+	 </div>
+</div>
+    {% endfor %}
+	
 <div class="main-box">
     <div class="box-title">
         Python
