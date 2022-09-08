@@ -1,3 +1,5 @@
-Workshop,Overview
-Introduction to Python,Beginners
-Introduction to R,Beginners
+Workshop,Overview,Link,NextSession,InstallationLink,
+Introduction to Python,"Learn the fundamentals of Python, one of the most popular programming languages, and get introduced to a variety of applications.",,,,TBC
+Introduction to R,An introduction to the R programming language for beginners.,,,,"18th,25th,1st, 8th Nov 2022"
+Introduction to Unix,Introduction to Unix,,,,
+Introduction to HPC,Introduction to using high performance computing facilities at UoE,,,,
