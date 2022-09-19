@@ -12,7 +12,7 @@ These workshops are brought to you by the University of Exeter Research Software
 
 ## Workshops
 
-A list of the workshops we offer can be found on the [Workshops page](https://uniexeterrse.github.io/workshop-homepage/workshops.html).
+A list of the workshops we offer can be found on the [Workshops page](https://uniexeterrse.github.io/workshop-homepage/workshops.html). If you wish to added to our mailing list and contacted when registration for workshops opens [please complete this survey](https://forms.office.com/Pages/ResponsePage.aspx?id=d10qkZj77k6vMhM02PBKU6c8tNVRoxhAjFFJWmm07JtUMTNMVVU0VEdGTlVNQjRaTTFPWllHR0FOVi4u)
 
 ## When and where
 
@@ -20,7 +20,7 @@ The programme of workshops runs from Oct-July each academic year. Workshops with
 
 ## Feedback
 
-If there are skills not covered by existing workshops, that you would welcome training on, please complete this survey. We will review the resonses on an annual basis, in advance of planning the programme for the next academic year. 
+If there are skills not covered by existing workshops, that you would welcome training on, [please complete this survey](https://forms.office.com/Pages/ResponsePage.aspx?id=d10qkZj77k6vMhM02PBKU6c8tNVRoxhAjFFJWmm07JtURVk2M0JPTVIyNDhYTkk0TkZFTDY5NkMySC4u). We will review the responses on an annual basis, in advance of planning the programme for the next academic year. 
 
 ## Join us
 
