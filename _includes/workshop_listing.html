@@ -84,17 +84,17 @@ a.button:hover, a.button:active {
 	    <div class="box-content">
 		<p class="box-msg">{{ entry.Overview }}</p>
 		 {% if entry.CourseLink != "-" %}
-			<a href="({{ entry.CourseLink }}" class="a.button">Course homepage</a>
+			<a href="({{ entry.CourseLink }}" class="button">Course homepage</a>
 		 {% else %}   
-			<p class="box-msg">"A link to the course home page will be posted shortly.</p>
+			<p class="box-msg">A link to the course home page will be posted shortly.</p>
 		{% endif %}    
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
 		{% if entry.RegistrationLive == "Y" %}
 		   	<p class="box-subtitle"> Registration links </p>
- 			<p class="box-date"><a href="({{ entry.PGRInPersonLink }}" class="a.button">PhD students: in person place</a>
-				<a href="({{ entry.PGROnlineLink }}" class="a.button">PhD students: online place</a></p>
-		     	<!--<p class="box-date"><a href="({{ entry.StaffInPersonLink }}" class="a.button">Staff members: in person place</a></p>-->
-		     	<!--<p class="box-date"><a href="({{ entry.StaffOnlineLink }}" class="a.button">Staff members: online place</a></p>-->
+ 			<p class="box-date"><a href="({{ entry.PGRInPersonLink }}" class="button">PhD students: in person place</a>
+				<a href="({{ entry.PGROnlineLink }}" class="button">PhD students: online place</a></p>
+		     	<!--<p class="box-date"><a href="({{ entry.StaffInPersonLink }}" class="button">Staff members: in person place</a></p>-->
+		     	<!--<p class="box-date"><a href="({{ entry.StaffOnlineLink }}" class="button">Staff members: online place</a></p>-->
 		{% endif %}		
 	 </div>
 </div>
