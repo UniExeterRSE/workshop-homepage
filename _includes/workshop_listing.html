@@ -74,7 +74,11 @@ a:hover, a:active {
 	    </div>
 	    <div class="box-content">
 		<p class="box-msg">{{ entry.Overview }}</p>
-		<a href="({{ entry.CourseLink }}" class="box-link">A link to the course homepage will posted shortly</a>
+		 {% if entry.CourseLink != "" %}
+			<a href="({{ entry.CourseLink }}" class="box-link">Course homepage</a>
+		 {% else %}   
+			<p class="box-msg">"A link to the course home page will be posted shortly.</p>
+		{% endif %}    
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
 		{% if entry.RegistrationLive == "Y" %}
 		   	<p class="box-subtitle"> Registration links </p>
