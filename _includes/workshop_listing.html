@@ -91,10 +91,10 @@ a.button:hover, a.button:active {
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
 		{% if entry.RegistrationLive == "Y" %}
 		   	<p class="box-subtitle"> Registration links </p>
- 			<p class="box-date"><a href="({{ entry.PGRInPersonLink }}" class="button">PhD students: in person place</a>
-				<a href="({{ entry.PGROnlineLink }}" class="button">PhD students: online place</a></p>
-		     	<!--<p class="box-date"><a href="({{ entry.StaffInPersonLink }}" class="button">Staff members: in person place</a></p>-->
-		     	<!--<p class="box-date"><a href="({{ entry.StaffOnlineLink }}" class="button">Staff members: online place</a></p>-->
+ 			<p><a href="{{ entry.PGRInPersonLink }}" class="button">PhD students: in person place</a>
+				<a href="{{ entry.PGROnlineLink }}" class="button">PhD students: online place</a></p>
+		     	<!--<p><a href="{{ entry.StaffInPersonLink }}" class="button">Staff members: in person place</a></p>-->
+		     	<!--<p><a href="{{ entry.StaffOnlineLink }}" class="button">Staff members: online place</a></p>-->
 		{% endif %}		
 	 </div>
 </div>
