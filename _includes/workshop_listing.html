@@ -56,10 +56,10 @@
 		<a href="({{ entry.CourseLink }}" class="box-link">A link to the course homepage will posted shortly</a>
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
 		{% if entry.RegistrationLive == "Y" %}
- 			<a href="({{ entry.PGRInPersonLink }}" class="box-link">PhD students register for in person place here</a>
-		     	<a href="({{ entry.PGROnlineLink }}" class="box-link">PhD students register for online place here</a>
-		     	<!--<a href="({{ entry.StaffInPersonLink }}" class="box-link">Staff members register for in person place here</a>-->
-		     	<!--<a href="({{ entry.StaffOnlineLink }}" class="box-link">Staff members register for online place here</a>-->
+ 			<p class="box-date"><a href="({{ entry.PGRInPersonLink }}" class="box-link">PhD students register for in person place here</a></p>
+		     	<p class="box-date"><a href="({{ entry.PGROnlineLink }}" class="box-link">PhD students register for online place here</a></p>
+		     	<!--<p class="box-date"><a href="({{ entry.StaffInPersonLink }}" class="box-link">Staff members register for in person place here</a></p>-->
+		     	<!--<p class="box-date"><a href="({{ entry.StaffOnlineLink }}" class="box-link">Staff members register for online place here</a></p>-->
 		{% endif %}		
 	 </div>
 </div>
