@@ -32,7 +32,20 @@
 	<div class = "container">
     	<div class="box"></div>
     </div>
-    
+ <div class="main-box">
+	    <div class="box-title">
+		Guidance for registring for workshops
+	    </div>
+	    <div class="box-content">
+		<p class="box-msg"> All workshops have the option to attend in person or remotely. Please note that you will need to opt for a method of delivery at the point of registation.  </p>
+		<p class="box-msg"> The process for signing up for a workshop differs depending on whether you are a PhD student or a member of staff. </p>
+		
+		<p class="box-msg"> <b>PhD students:</b> booking is handled by the Doctoral College via <a href="https://webapp.inkpath.co.uk/#/LoginPage" class="box-link">Inkpath</a>. You wil need to register for an account. Once you are logged in the links below should take you direct to the relevant page.</p>
+		<p class="box-msg"> <b>Staff:</b> booking is handled by Researcher Development via <a href="http://www.exeter.ac.uk/staff/development/courses/" class="box-link">iTrent</a>. The links below should take you direct to the relevant page.</p>
+		    
+		
+	 </div>
+</div>   
     {% for entry in site.data.WorkshopDescriptors %}
 	<div class="main-box">
 	    <div class="box-title">
@@ -42,7 +55,7 @@
 		<p class="box-msg">{{ entry.Overview }}</p>
 		<a href="({{ entry.CourseLink }}" class="box-link">A link to the course homepage will posted shortly</a>
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
-		{% if product.title == "Awesome Shoes" %}
+		{% if entry.RegistrationLive == "Y" %}
  			<a href="({{ entry.PGRInPersonLink }}" class="box-link">PhD students register for in person place here</a>
 		     	<a href="({{ entry.PGROnlineLink }}" class="box-link">PhD students register for online place here</a>
 		     	<!--<a href="({{ entry.StaffInPersonLink }}" class="box-link">Staff members register for in person place here</a>-->
