@@ -1,10 +1,15 @@
 <html>
 <head>
 <style>
-.main-box{
+.full-box{
     border:1px solid #04AA6D;
     margin: 10px 0px 10px 0px;
     height: 400px
+}
+.small-box{
+    border:1px solid #04AA6D;
+    margin: 10px 0px 10px 0px;
+    height: 300px
 }
 .box-title{
     background-color:#04AA6D;
@@ -51,7 +56,7 @@ a:hover, a:active {
 	<div class = "container">
     	<div class="box"></div>
     </div>
- <div class="main-box">
+ <div class="full-box">
 	    <div class="box-title">
 		Guidance for registering for workshops
 	    </div>
@@ -68,7 +73,11 @@ a:hover, a:active {
 	 </div>
 </div>   
     {% for entry in site.data.WorkshopDescriptors %}
-	<div class="main-box">
+	{% if entry.RegistrationLive == "Y" %}
+		<div class="full-box">
+	{% else %}  
+		<div class="small-box">
+	{% endif %} 
 	    <div class="box-title">
 		{{ entry.Workshop }}
 	    </div>
