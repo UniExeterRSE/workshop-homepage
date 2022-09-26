@@ -83,7 +83,7 @@ a:hover, a:active {
 	    </div>
 	    <div class="box-content">
 		<p class="box-msg">{{ entry.Overview }}</p>
-		 {% if entry.CourseLink != "" %}
+		 {% if entry.CourseLink != "-" %}
 			<a href="({{ entry.CourseLink }}" class="box-link">Course homepage</a>
 		 {% else %}   
 			<p class="box-msg">"A link to the course home page will be posted shortly.</p>
