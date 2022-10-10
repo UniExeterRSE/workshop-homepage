@@ -86,10 +86,8 @@ a.button:hover, a.button:active {
 		{% endif %}    
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
 		{% if entry.RegistrationLive == "Y" %}
-		   	<p class="box-subtitle"> Registration links </p>
- 			<p><a href="{{ entry.PGRInPersonLink }}" class="button">PhD students: in person place</a>
-				<a href="{{ entry.PGROnlineLink }}" class="button">PhD students: online place</a>
-				<a href="{{ entry.StaffLink }}" class="button">Research staff</a></p>
+		   	<p class="box-subtitle"> Registration closes: {{ entry.ClosingDate }} </p>
+ 			<p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=d10qkZj77k6vMhM02PBKU6c8tNVRoxhAjFFJWmm07JtUMjM5WTdQSzVJVUZMUE5HTEROSjNTNjI0TS4u" class="button">Registration Form</a></p>
 		{% endif %}		
 	 </div>
 </div>
