@@ -69,7 +69,7 @@ a.button:hover, a.button:active {
 		
 	 </div>
 </div>   
-    {% for entry in site.data.WorkshopDescriptors %}
+{% for entry in site.data.WorkshopDescriptors %}
 	{% if entry.RegistrationLive == "Y" %}
 		<div class="full-box">
 		    <div class="box-title">
@@ -83,13 +83,13 @@ a.button:hover, a.button:active {
 			<p class="box-msg">A link to the course home page will be posted shortly.</p>
 		{% endif %}    
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
-		   	<p class="box-subtitle"> Registration is currently open. It will close: {{ entry.ClosingDate }} </p>
+		   	<p class="box-date"> Registration is currently open. It will close: {{ entry.ClosingDate }} </p>
  			<p><a href="https://forms.office.com/r/r9xTtwmXHR" class="button">Registration Form</a></p>
 			
 	 </div>
 	</div>
 	{% endif %}
-    {% endfor %}
+{% endfor %}
 
 {% for entry in site.data.WorkshopDescriptors %}
 	{% if entry.RegistrationLive == "N" %}
@@ -100,7 +100,7 @@ a.button:hover, a.button:active {
 	    <div class="box-content">
 		<p class="box-msg">{{ entry.Overview }}</p>
 		 {% if entry.CourseLink != "-" %}
-			<a href="{{ entry.CourseLink }}" class="button">Course homepage</a>
+			<a href="{{ entry.CourseLink }}" class="button">More details on the scope of these sessions can be found on the workshop homepage</a>
 		 {% else %}   
 			<p class="box-msg">A link to the course home page will be posted shortly.</p>
 		{% endif %}    
