@@ -63,7 +63,8 @@ a.button:hover, a.button:active {
 	    <div class="box-content">
 		<p class="box-msg"> All workshops have the option to attend in person or remotely. Please note that you will need to opt for a method of delivery at the point of registation.  </p>
 		<p class="box-subtitle"> Registration </p>
-		<p class="box-msg"> Please <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=d10qkZj77k6vMhM02PBKU6c8tNVRoxhAjFFJWmm07JtUMjM5WTdQSzVJVUZMUE5HTEROSjNTNjI0TS4u" class="box-link">register your interest in a particular course</a> by completing this form. This does not guarantee you a place on your chosen course. Places will be allocated on a first come first served basis once registration closes and you will be asked to re-confirm your availability to attend. Registration dates are listed for each workshop below. If the form is not accepting responses, this means that there are no workshops open for registration at this time.</p>
+		<p class="box-msg"> Please <a href="https://forms.office.com/r/r9xTtwmXHR" class="box-link">register your interest in a particular course</a> by completing this form. This does not guarantee you a place on your chosen course. Places will be allocated on a first come first served basis once registration closes and you will be asked to re-confirm your availability to attend. Registration dates are listed for each workshop below. If the form is not accepting responses, this means that there are no workshops open for registration at this time.</p>
+		<p class="box-msg"> If the workshop you are interested in, is not currently open for registration, please join our to   <a href="https://forms.office.com/r/NwbXs1qApw" class="box-link">mailing list</a> to get priority notification of when it opens. </p>
 			    
 		
 	 </div>
@@ -71,10 +72,7 @@ a.button:hover, a.button:active {
     {% for entry in site.data.WorkshopDescriptors %}
 	{% if entry.RegistrationLive == "Y" %}
 		<div class="full-box">
-	{% else %}  
-		<div class="small-box">
-	{% endif %} 
-	    <div class="box-title">
+		    <div class="box-title">
 		{{ entry.Workshop }}
 	    </div>
 	    <div class="box-content">
@@ -85,10 +83,28 @@ a.button:hover, a.button:active {
 			<p class="box-msg">A link to the course home page will be posted shortly.</p>
 		{% endif %}    
 		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
-		{% if entry.RegistrationLive == "Y" %}
 		   	<p class="box-subtitle"> Registration is currently open. It will close: {{ entry.ClosingDate }} </p>
  			<p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=d10qkZj77k6vMhM02PBKU6c8tNVRoxhAjFFJWmm07JtUMjM5WTdQSzVJVUZMUE5HTEROSjNTNjI0TS4u" class="button">Registration Form</a></p>
-		{% endif %}		
+	{% endif %}		
+	 </div>
+</div>
+    {% endfor %}
+
+{% for entry in site.data.WorkshopDescriptors %}
+	{% if entry.RegistrationLive == "N" %}
+		<div class="small-box">
+		    <div class="box-title">
+		{{ entry.Workshop }}
+	    </div>
+	    <div class="box-content">
+		<p class="box-msg">{{ entry.Overview }}</p>
+		 {% if entry.CourseLink != "-" %}
+			<a href="{{ entry.CourseLink }}" class="button">Course homepage</a>
+		 {% else %}   
+			<p class="box-msg">A link to the course home page will be posted shortly.</p>
+		{% endif %}    
+		<p class="box-date">This course is next scheduled to run: {{ entry.NextSession }}</p>
+	{% endif %} 
 	 </div>
 </div>
     {% endfor %}
